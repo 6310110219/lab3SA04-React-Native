@@ -6,9 +6,9 @@ export default function Forecast(props) {
     return (
         <View>
             <View>
-                <Text style={styles.head}>main</Text>
+                <Text style={styles.main}>main</Text>
                 <Text style={styles.text}>{props.main}</Text>
-                <Text style={styles.text}>description</Text>
+                <Text style={styles.description}>description</Text>
                 <Text style={styles.text}>{props.description}</Text>
             </View>
 
@@ -22,9 +22,16 @@ export default function Forecast(props) {
 }
 
 const styles = StyleSheet.create({
-    head: {
+    main: {
         marginTop: Constants.statusBarHeight,
         fontSize: 50,
+        textAlign: 'center',
+        color: 'white',
+    },
+
+    description: {
+        marginTop: Constants.statusBarHeight,
+        fontSize: 24,
         textAlign: 'center',
         color: 'white',
     },
