@@ -2,18 +2,21 @@ import React from "react";
 import { FlatList, TouchableHighlight } from "react-native";
 import { StatusBar, View, Text, StyleSheet } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import Constants from 'expo-constants';
 
 const availableZipItems = [
-    { place: 'Hatyai', code: '90110' },
-    { place: 'Trang', code: '92000' },
     { place: 'Chiangmai', code: '50000' },
     { place: 'Khonkaen', code: '40000' },
     { place: 'Chonburi', code: '20000' },
+    { place: 'Surat Thani', code: '84000'},
+    { place: 'Chumphon', code: '86000' },
+    { place: 'Hatyai', code: '90110' },
+    { place: 'Trang', code: '92000' },
+    { place: 'Phuket', code: '83000'},
+    { place: 'Phangnga', code: '82000'},
    ]
-
+   
 const ZipItem = ({place, code, navigation}) => (
-    <TouchableHighlight onPress={() => {
+    <TouchableHighlight underlayColor="#E5E6EA" onPress={() => {
         navigation.navigate("Weather", {zipCode: code})
     }}>
         <View style= {style.zipItem}>
@@ -55,7 +58,7 @@ const style = StyleSheet.create(
         fontWeight: "bold",
         color: 'white',
         textAlign: 'center',
-        // margin: 3,
+        margin: 3,
       },
 
       code: {
@@ -64,7 +67,10 @@ const style = StyleSheet.create(
         fontWeight: "bold",
         color: 'white',
         textAlign: 'center',
-        // margin: 3,
-      }
+        margin: 3,
+      },
+      press: {
+        color: 'white',
+      },
     }
   ) 
