@@ -13,29 +13,31 @@ section: 01
  ------------------------------------------
  รายละเอียด
  
- ![temp_cool](https://user-images.githubusercontent.com/90532264/187038695-7c9c55f3-2350-486a-8d62-78096131bd8f.jpg)
+ ![](picture/temp_cool.jpg)
  
  มีการจัดเรียงปรับแต่งการจัดวางในหน้า Weather ให้ดูง่ายขึ้น โดยจะมีการแก้ไขโค้ดในส่วนของ file Forecast.js และ Weather.js เป็นหลัก 
  โดยจะใช้ StyleSheet ในการปรับการจัดวาง การปรับแต่งขนาดตัวอักษร ตำแหน่งต่างๆ 
  ใน Weather.js จะปรับแต่งในส่วนของ ข้อความแสดง จังหวัด รหัสไปรษณีย์ ประเทศ
  ใน Forecast.js จะปรับแต่งในส่วนของ อุณหภูมิ main description และ พวก humidity, feels_like, pressure, wind_speed ที่เพิ่มมาภายหลัง
  
- 
- 
- ![new_choose_page](https://user-images.githubusercontent.com/90532264/187038972-7cc59f18-da7a-437f-8559-5f93ec162f32.jpg)
- 
- ![onpress_choose_zipcode](https://user-images.githubusercontent.com/90532264/187039128-79b55ec2-6815-411b-8d45-55fc89e6def2.jpg)
- 
+  ------------------------------------------
+  
+ ![](picture/new_choose_page.jpg)
+ -----------
+ เมื่อแตะปุ่มสีเปลี่ยน
+  ![](picture/onpress_choose_zipcode.jpg)
+  
  มีการจัดเรียงปรับแต่งการจัดวางในหน้า Choose a zip code ให้ดูง่ายขึ้น ซึ่งจะทำการปรับแต่งในไฟล์ ZipCodeScreen.js
  โดยใช้ StyleSheet ในการปรับการจัดวาง การปรับแต่งขนาดตัวอักษร ตำแหน่งต่างๆ ความเข้มสีพิ่นหลัง
  อีกทั้งยังปรับการแตะที่ปุ่มของ TouchableHighlight ให้เป็นสีที่ต้องการได้ โดยเพอ่มคำสั่ง underlayColor="" เข้าไป
  และ มีการเพิ่มจัดหวัด รหัสไปรษณีย์ โดยสามารถเพิ่มที่ส่วนของ availableZipItems ของไฟล์ ZipCodeScreen.js
- 
- ![temp_hot](https://user-images.githubusercontent.com/90532264/187039132-57f78a4d-1ad1-4d99-8407-6692d701e8a1.jpg)
+  ------------------------------------------
+  
+ ![](picture/temp_hot.jpg)
  
  อุณหภูมิ > 28
  
- ![temp_cool](https://user-images.githubusercontent.com/90532264/187038695-7c9c55f3-2350-486a-8d62-78096131bd8f.jpg)
+ ![](picture/temp_cool.jpg)
   อุณหภูมิ < 28
  
  
