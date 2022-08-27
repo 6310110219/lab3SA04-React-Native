@@ -19,6 +19,7 @@ export default function Weather(props) {
                         temp: json.main.temp,
                         name: json.name,
                         country: json.sys.country,
+
                         humidity: json.main.humidity,
                         feels_like: json.main.feels_like,
                         pressure: json.main.pressure,
@@ -38,6 +39,7 @@ export default function Weather(props) {
         temp: 0,
         name: '',
         country: '',
+
         humidity: '',
         feels_like: '',
         pressure: '',
